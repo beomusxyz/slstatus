@@ -65,10 +65,14 @@ static const char unknown_str[] = "n/a";
  */
 static const struct arg args[] = {
 	/* function	format				 argument */
-//	{ netspeed_tx,	"[W  %sB/s|",			 "wlo1" }, 
-//	{ netspeed_rx,	"%sB/s ] ",                     "wlo1" },
-	{ netspeed_tx,	"[E  %sB/s|",			 "wlo1" }, 
-	{ netspeed_rx,	"%sB/s ] ",                     "wlo1" },
+//	{ netspeed_tx,	"[ %sB/s|",			 "wlan0" }, 
+//	{ netspeed_rx,	"%sB/s ] ",                     "wlan0" },
+	{ wifi_essid,	"Wifi: %s ",			 "wlan0" },
+	{ ipv4,		"IPv4: %s ",			 "wlan0" },
+	{ netspeed_tx,	"[ %sB/s|",			 "wlan0" }, 
+	{ netspeed_rx,	"%sB/s ] ",                     "wlan0" },
+	{ disk_used,	"(%s / ",			 "/"	},
+	{ disk_total,	"%s)",				 "/"	},
 	{ battery_perc, "[BAT  %s%%] ",		 "BAT0"	},	
 	{ cpu_perc,	"[CPU  %s%%] ",		 NULL	},
 	{ ram_perc,	"[RAM  %s%%] ",		 NULL	},
